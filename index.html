@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="image/favicon-16x16.png" type="image/x-icon">
+    
+    <script src="https://kit.fontawesome.com/a8a57c55ef.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Odia:wght@300&family=Grape+Nuts&family=Merriweather:ital,wght@1,300&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <title>LA - personal Site</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="image/logo.png" alt="logo Luis Almeida">
+        </div>
+        <ul>
+            <li>
+                <a href="github.com">Git</a>
+            </li>
+            <li>
+                <a href="linkedin.com">Linkedin</a>
+            </li>
+            <li>
+                <a href="mailto:teste@teste.com">Contato</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container-principal">
+            <div class="name" >
+                <h1>Luis Almeida</h1>
+                <h5>Front-End Developer</h5>
+                
+            </div>
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-circle-arrow-down"></i>
+            </div>
+            <div style="display: none;" id="about">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet porta purus, ut dapibus nibh. 
+                    Nulla dapibus efficitur commodo. Phasellus tristique, augue non suscipit consectetur,erat diam tincidunt metus,
+                    vitae fermentum diam nisi at velit. Morbi nibh lacus, iaculis vitae metus vel, dignissim porta metus.
+                    Pellentesque aliquet vulputate sem sit amet vehicula. Phasellus volutpat diam arcu, non bibendum arcu facilisis et.
+                    Maecenas ultricies tellus quis justo maximus, nec ultrices.
+                </p>
+            </div>
+            <div class="form">
+                <div>
+                    <p>deixe seu contato</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Seu email:">
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate')
+            var display = document.getElementById('about');
+            display.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
